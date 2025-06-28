@@ -7,14 +7,12 @@ def count_words(text):
 
 
 def count_symbols(text):
-    words_dict = {}
+    symbol_dict = {}
     low_text = text.lower()
-    words_list = low_text.split()
-    words_set = set(words_list)
-    for word in words_list:
-        if word in words_dict:
-            words_dict[word] = words_dict[word] + 1
+    for character in low_text:
+        if character in symbol_dict:
+            symbol_dict[character] = symbol_dict[character] + 1
         else:
-            words_dict[word] = 1
-    test = words_dict
+            symbol_dict[character] = 1
+    test = symbol_dict
     return test

@@ -9,8 +9,8 @@ def get_book_text(filepath):
 
 def main():
     text = get_book_text("books/frankenstein.txt")
-    #word_count = count_words(text)
-    #print(f"{word_count} words found in the document")
-    #symbol_count = count_symbols(text)
-    print(count_symbols(text))
+    word_count = count_words(text)
+    print(f"{word_count} words found in the document")
+    symbol_count = count_symbols(text)
+    print(symbol_count)
 main()
